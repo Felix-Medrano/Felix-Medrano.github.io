@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Curriculum Vitae" />
+    <meta
+      name="keywords"
+      content="Felix, Medrano, Supervisor, Produccion, Materiales, Software, Freelance, Web, HTML5,CSS3,Javascript, vcard, resume, CV"
+    />
+    <!-- palabras clave para buscadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta para hacerlo escalable a celulares -->
+    <title>Felix Medrano</title>
+    <!-- los link van en el mismo orden SIEMPRE -->
+    <link rel="shortcut icon" href="imagenes/tab.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Va antes que la los css propios -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script
+      src="https://kit.fontawesome.com/d76853896d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Panel Lateral -->
+    <header class="menuLateral transicion menuVisible">
+      <div class="contenedorMenu">
+        <div class="idiomas">
+          <div class="selIdioma">Language</div>
+          <div class="seleccion">
+            <div class="redim">
+              <a href="index.php"><img src="imagenes/mx2.png" /></a>
+            </div>
+            <!-- <div class="redim">
+              <a href="index_en.php"><img src="imagenes/usa2.png" /></a>
+            </div> -->
+          </div>
+        </div>
+        <div class="foto">
+          <img src="imagenes/perfil-pequeno.png" />
+        </div>
+        <div class="bloqueTitulo">
+          <div class="titulo">Felix Medrano</div>
+        </div>
+        <div class="contenedorListaMenu">
+          <ul id="Menu" class="menuPrincipal">
+            <li class="inicio">
+              <a href="#Inicio" class="active"> Home </a>
+            </li>
+            <li>
+              <a href="#AcercadeMi "> About Me </a>
+            </li>
+            <li>
+              <a href="#Industria"> Industry </a>
+            </li>
+            <!-- <li>
+                        <a href="#Informatica">
+                            Informatica
+                        </a>
+                    </li> -->
+            <li>
+              <a href="#Portafolio"> Portfolio </a>
+            </li>
+            <li>
+              <a href="#Contacto"> Contact Me </a>
+            </li>
+          </ul>
+        </div>
+        <div class="areaLinks">
+          <div class="links">
+            <a
+              href="https://wa.me/528662375915?text=Me%20interesa%20contactarte"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp-square"></i>
+            </a>
+          </div>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/felix-medrano-96a767176/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://github.com/Felix-Medrano" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="copyrights">©2020 All Rights Reserved.</div>
+      </div>
+    </header>
+
+    <!-- Menu para Movil -->
+    <div class="menuMovil menuMovilVisible">
+      <div class="fotoMovil">
+        <img src="imagenes/perfil-pequeno.png" />
+      </div>
+      <div class="tituloMovil">Felix <br />Medrano</div>
+      <a href="#" class="hamb">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+      <section id="Inicio" class="mostrar">
+        <div class="configuracionGeneral">
+          <div class="centro">
+            <div class="fondo"></div>
+            <div class="tituloInicio">
+              <h2>Felix Medrano</h2>
+              <div class="subtitulo">Production</div>
+              <div class="subtitulo">Materials</div>
+              <div class="subtitulo">Computing</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="AcercadeMi">
+        <div class="estiloGeneral">
+          <div class="contenedor">
+            <div class="bloqueTitulo">
+              <h2 class="titulo">About Me</h2>
+              <h3 class="subtitulo">
+                Production Supervisor - Materials Supervisor - Quality
+                Assurement - Software Development - Web Design
+              </h3>
+            </div>
+          </div>
+          <div class="contenedorInformacion">
+            <div class="row">
+              <div class="col50">
+                <h3>Computer Systems Engineer</h3>
+                <p>
+                  Thanks to my training that gave me logical and analytical
+                  thinking, and my experience in various branches of the
+                  industry, I know that I can add value and continue to develop
+                  professionally in a company that shares my values ​​and
+                  expectations. <br />
+                </p>
+                <p>
+                  I am a person who knows how to work under pressure, with a
+                  taste for challenges, and an insatiable hunger to learn,
+                  either self-taught or with Coaching, always open to change,
+                  with a Win-Win, Humanist mentality.
+                </p>
+              </div>
+              <div class="col50 centrado">
+                <ul class="informacion">
+                  <li>
+                    <i class="fas fa-user-clock"></i>
+                    <span class="titulo"> Age: </span>
+                    <span class="valor">33</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-globe-americas"></i>
+                    <span class="titulo"> Home: </span>
+                    <span class="valor">Mexico</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-home"></i>
+                    <span class="titulo"> Address: </span>
+                    <span class="valor">Las Tortugas #32, Frontera, Coah.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span class="titulo"> e-mail: </span>
+                    <span class="valor">
+                      <a href="mailto: felix.d.medrano@gmail.com"
+                        >felix.d.medrano<br />@gmail.com</a
+                      >
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fas fa-mobile"></i>
+                    <span class="titulo"> Phone: </span>
+                    <span class="valor">866-237-5915</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="habilidades">
+              <div class="row">
+                <div class="col33">
+                  <div class="subtitulo">Values</div>
+                  <ul class="infoLista">
+                    <li>- Loyal</li>
+                    <li>- Responsible</li>
+                    <li>- Honored</li>
+                    <li>- Grateful</li>
+                    <li>- Respectful</li>
+                    <li>- Humble</li>
+                    <li>- Tolerant</li>
+                    <li>- Ambitious</li>
+                  </ul>
+                </div>
+                <div class="col33">
+                  <div class="subtitulo">Personal Skills</div>
+                  <ul class="infoLista">
+                    <li>- Leadership</li>
+                    <li>- Responsability</li>
+                    <li>- Trobuleshooting</li>
+                    <li>- Teamwork</li>
+                    <li>- Organized</li>
+                    <li>- Interpersonal Relationship</li>
+                    <li>- Adaptable</li>
+                    <li>- Autonomous</li>
+                    <li>- Proactive</li>
+                    <li>- Pressure Tolerant</li>
+                  </ul>
+                </div>
+                <div class="col33">
+                  <div class="subtitulo">Pc Software</div>
+                  <ul class="infoLista">
+                    <li>- Microsoft Oficce</li>
+                    <li>- AutoCad</li>
+                    <li>- AS 400</li>
+                    <li>- Kronos</li>
+                    <li>- Visual Studio</li>
+                    <li>- MS SQL Server</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Industria">
+        <div class="estiloGeneral">
+          <div class="contenedor">
+            <div class="bloqueTitulo">
+              <h2 class="titulo">Work Experience</h2>
+              <h3 class="subtitulo">11 Years of Experience</h3>
+            </div>
+          </div>
+          <div class="contenedorInformacion">
+            <div class="row">
+              <div class="contenedorExperiencia">
+                <div class="contenedorExpIzquierdo">
+                  <h5 class="periodo">May/2019 - January/2020</h5>
+                  <span class="compania">Trinity Rail</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="contenedorExpDerecho">
+                  <h2 class="titulo subraya">Production Supervisor</h2>
+                  <ul class="infoLista">
+                    <li>Personnel Management</li>
+                    <li>Management of Indicators</li>
+                    <li>SQDC+E Presentation</li>
+                    <li>Follow-up to Production Plan</li>
+                    <li>Production Planning</li>
+                    <li>Trobuleshooting</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contenedorExperiencia">
+                <div class="contenedorExpIzquierdo">
+                  <h5 class="periodo">August/2018 - May/2019</h5>
+                  <span class="compania">Procarsa</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="contenedorExpDerecho">
+                  <h2 class="titulo subraya">Quality Assurement</h2>
+                  <ul class="infoLista">
+                    <li>Revision against Drawing</li>
+                    <li>Quality Assurance Paper Filling</li>
+                    <li>Trobuleshooting</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contenedorExperiencia">
+                <div class="contenedorExpIzquierdo">
+                  <h5 class="periodo">May/2016 - Dec/2017</h5>
+                  <span class="compania">Lear</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="contenedorExpDerecho">
+                  <h2 class="titulo subraya">Production Supervisor</h2>
+                  <ul class="infoLista">
+                    <li>Personal Administration (60+)</li>
+                    <li>Production Planning</li>
+                    <li>Trobuleshooting</li>
+                    <li>Production Reports</li>
+                    <li>Cycle Count</li>
+                    <li>Scrap Reduction, Dead Time, Overtime</li>
+                    <li>Follow-up to Production Plan</li>
+                    <li>5's</li>
+                    <li>Production Coordination</li>
+                    <li>Materials Coordination</li>
+                    <li>SQDC Board Presentation</li>
+                    <li>Lead Business Unit</li>
+                    <li>Presentation of results to Management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contenedorExperiencia">
+                <div class="contenedorExpIzquierdo">
+                  <h5 class="periodo">June/2015 - May/2016</h5>
+                  <span class="compania">Equipos Mineros</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="contenedorExpDerecho">
+                  <h2 class="titulo subraya">Materials Supervisor</h2>
+                  <ul class="infoLista">
+                    <li>Inventories</li>
+                    <li>Supply Chain</li>
+                    <li>Enabled Planning</li>
+                    <li>Finished Product Control</li>
+                    <li>Shipment Planning</li>
+                    <li>Receipt of Materials</li>
+                    <li>Shipment Supervision</li>
+                    <li>Personal Administration</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contenedorExperiencia">
+                <div class="contenedorExpIzquierdo">
+                  <h5 class="periodo">October/2014 – March/2015</h5>
+                  <span class="compania">Trinity Rail</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="contenedorExpDerecho">
+                  <h2 class="titulo subraya">Production Supervisor</h2>
+                  <ul class="infoLista">
+                    <li>Personnel Management</li>
+                    <li>Management of Indicators</li>
+                    <li>SQDC+E Presentation</li>
+                    <li>Follow-up to Production Plan</li>
+                    <li>Production Planning</li>
+                    <li>Trobuleshooting</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contenedorExperiencia">
+                <div class="contenedorExpIzquierdo">
+                  <h5 class="periodo">October/2011 - October/2014</h5>
+                  <span class="compania">Equipos Mineros</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="contenedorExpDerecho">
+                  <h2 class="titulo subraya">Materials Supervisor</h2>
+                  <ul class="infoLista">
+                    <li>Inventories</li>
+                    <li>Supply Chain</li>
+                    <li>Enabled Planning</li>
+                    <li>Finished Product Control</li>
+                    <li>Personal Administration</li>
+                    <li>Receipt of Materials</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contenedorExperiencia">
+                <div class="contenedorExpIzquierdo">
+                  <h5 class="periodo">August/2008 - October/2011</h5>
+                  <span class="compania">Takata</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="contenedorExpDerecho">
+                  <h2 class="titulo subraya">Production Leader</h2>
+                  <ul class="infoLista">
+                    <li>Personal Administration</li>
+                    <li>Production stationery filling</li>
+                    <li>Work under Objectives</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="habilidades">
+            <div class="row">
+              <div class="tituloHabilidades">
+                <h3 class="subraya">Skills</h3>
+              </div>
+              <div class="col33">
+                <div class="subtitulo">Production</div>
+                <ul class="infoLista">
+                  <li>- Personal Administration</li>
+                  <li>- Work Under Pressure</li>
+                  <li>- Troubleshooting</li>
+                  <li>- Production Planning</li>
+                  <li>- Follow-up to Production Plan</li>
+                  <li>- Conflict Management</li>
+                  <li>- Lean Manufacturing</li>
+                  <li>- Kaizen, 5's</li>
+                  <li>- KPI's</li>
+                  <li>- SQDC + E</li>
+                  <li>- Work under Goals</li>
+                  <li>- Pull / Push system</li>
+                  <li>- "One Pice Floor" Methodology</li>
+                  <li>- Scrap reduction, dead times</li>
+                </ul>
+              </div>
+              <div class="col33">
+                <div class="subtitulo">Materials</div>
+                <ul class="infoLista">
+                  <li>- Enable planning</li>
+                  <li>- Deal with Suppliers</li>
+                  <li>- Cyclical Inventories</li>
+                  <li>- FIFO system</li>
+                  <li>- On Hand System</li>
+                  <li>- Reception of raw material</li>
+                  <li>- Shipment of raw material</li>
+                  <li>- Control and shipment of Finished Product</li>
+                </ul>
+              </div>
+              <div class="col33">
+                <div class="subtitulo">Quality</div>
+                <ul class="infoLista">
+                  <li>- Inspection against dubujo</li>
+                  <li>- Bernier</li>
+                  <li>- Micrometer</li>
+                  <li>- Documentation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Portafolio">
+        <div class="estiloGeneral">
+          <div class="contenedor">
+            <div class="bloqueTitulo">
+              <h2 class="titulo">Portfolio</h2>
+              <h3 class="subtitulo">Projects</h3>
+              <div></div>
+            </div>
+          </div>
+          <div class="contenedorInformacion">
+            <div class="contenedorExperiencia">
+              <div class="contenedorExpIzquierdo">
+                <h4 class="titulo">Pokedex</h4>
+                <p>Project status: Development</p>
+                <p>-Add button Front / Back button</p>
+                <p>-Add button Normal / Shiny Button</p>
+                <p>-Change search engine to right cover</p>
+                <p>
+                  <a
+                    href="https://github.com/Felix-Medrano/pokedex"
+                    target="_blank"
+                    >Link</a
+                  >
+                </p>
+              </div>
+              <div class="divisor"></div>
+              <div class="contenedorExpDerecho">
+                <video
+                  src="./video/20210309_034257.mp4"
+                  width="300"
+                  height="220"
+                  controls
+                ></video>
+              </div>
+            </div>
+            <div class="contenedorExperiencia">
+              <div class="contenedorExpIzquierdo">
+                <h4 class="titulo">Flags</h4>
+                <p>Project status: Development</p>
+                <p>-Add Input to search by name</p>
+                <p>-Add night mode (On / Off)</p>
+                <p>-Clean bookmarks</p>
+                <p>
+                  <a
+                    href="https://github.com/Felix-Medrano/Practica_Banderas"
+                    target="_blank"
+                    >Link</a
+                  >
+                </p>
+              </div>
+              <div class="divisor"></div>
+              <div class="contenedorExpDerecho">
+                <video
+                  src="./video/banderas.mp4"
+                  width="300"
+                  height="220"
+                  controls
+                ></video>
+              </div>
+            </div>
+            <div class="contenedorExperiencia">
+              <div class="contenedorExpIzquierdo">
+                <h4 class="titulo">Landing Page</h4>
+                <p>Project status: Finished</p>
+                <p>Sample Landing Page</p>
+                <p>
+                  <a
+                    href="https://muestralandingsckdev.000webhostapp.com/index.php"
+                    target="_blank"
+                    >Link</a
+                  >
+                </p>
+              </div>
+              <div class="divisor"></div>
+              <div class="contenedorExpDerecho">
+                <a
+                  href="https://muestralandingsckdev.000webhostapp.com/index.php"
+                  target="_blank"
+                  ><img
+                    src="./imagenes/LandingPage.png"
+                    width="300"
+                    height="220"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="contenedorExperiencia">
+              <div class="contenedorExpIzquierdo">
+                <h4 class="titulo">Jump Man</h4>
+                <p>Project Status: Finish</p>
+                <p>-Simple game created in Unity</p>
+                <p>-Basic Course</p>
+                <p>
+                  <a href="/Games/jumpMan/JumpMan.html" target="_blank">Play</a>
+                </p>
+              </div>
+              <div class="divisor"></div>
+              <div class="contenedorExpDerecho">
+                <img
+                  src="/imagenes/jumpman.png"
+                  width="300"
+                  height="150"
+                  controls
+                /><img />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Contacto">
+        <div class="estiloGeneral">
+          <div class="contenedor">
+            <div class="bloqueTitulo">
+              <h2 class="titulo">Contact Me</h2>
+              <h3 class="subtitulo"></h3>
+            </div>
+            <div class="contenedorInformacion">
+              <div class="row">
+                <div class="cuadroContacto">
+                  <i class="fas fa-mobile"></i>
+                  <a
+                    href="https://wa.me/528662375915?text=Me%20interesa%20contactarte"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp-square" aria-hidden="true"></i>
+                  </a>
+                  <h4>866-237-59-15</h4>
+                </div>
+                <div class="cuadroContacto">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h4>Mexico</h4>
+                </div>
+                <div class="cuadroContacto">
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto: felix.d.medrano@gmail.com"
+                    ><h4>felix.d.medrano @gmail.com</h4></a
+                  >
+                </div>
+                <div class="cuadroContacto">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <h4>Unemployed</h4>
+                </div>
+                <div class="contenedorFormulario">
+                  <form action="index.php" method="POST">
+                    <div class="row">
+                      <div class="col50">
+                        <h2>Contact me</h2>
+                        <div class="formBlock">
+                          <input
+                            type="text"
+                            name="nombre"
+                            class="formControl"
+                            placeholder="Name"
+                            required
+                          />
+                        </div>
+                        <div class="formBlock">
+                          <input
+                            type="email"
+                            name="correo"
+                            class="formControl"
+                            placeholder="e-mail"
+                            required
+                          />
+                        </div>
+                        <div class="formBlock">
+                          <input
+                            type="text"
+                            name="asunto"
+                            class="formControl"
+                            placeholder="Subject"
+                            required
+                          />
+                        </div>
+                        <div class="formBlock mensaje">
+                          <textarea
+                            id="form_message"
+                            name="mensaje"
+                            class="formControl"
+                            placeholder="Message"
+                            rows="7"
+                            required="required"
+                            data-error="Please, leave me a message."
+                            style="
+                              margin-top: 0px;
+                              margin-bottom: 0px;
+                              height: 169px;
+                            "
+                          ></textarea>
+                        </div>
+                        <input
+                          type="submit"
+                          class="botonEnviar"
+                          value="Enviar Mensaje"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <?php
+                                            if($_SERVER["REQUEST_METHOD"] == "POST")
+                                            {
+                                                $nombre = $_POST["nombre"];
+                                                $correo = $_POST["correo"];
+                                                $asunto = $_POST["asunto"];
+                                                $mensaje = $_POST["mensaje"];
+                                                if(isset($nombre))
+                                                {
+                                                    if(isset($correo))
+                                                    {
+                                                        if(isset($mensaje))
+                                                        {
+                                                            if(isset($asunto))
+                                                            {
+                                                                $para = "sckrool@gmail.com";
+                                                                $cuerpo = "De: ".$correo."\n\nMesnaje:\n".$mensaje;
+                                                                $pie = "From: ".$correo;
+                                                                mail($para,$asunto,$cuerpo,$pie);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ?>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

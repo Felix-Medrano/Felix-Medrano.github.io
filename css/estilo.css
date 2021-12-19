@@ -1,0 +1,852 @@
+/* Todo */
+* {
+  box-sizing: border-box;
+  z-index: 0;
+  background-color: #222;
+  color: #b5b5b5;
+  font-family: "Times New Roman", Times, serif;
+}
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+}
+div {
+  display: block;
+}
+section {
+  display: none;
+}
+header {
+  overflow: auto;
+}
+section {
+  height: 100%;
+  width: 100%;
+}
+body::-webkit-scrollbar,
+.menuLateral::-webkit-scrollbar {
+  width: 5px;
+  background-color: #444;
+}
+body::-webkit-scrollbar-thumb,
+.menuLateral::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: black;
+}
+.mostrar {
+  display: block;
+}
+.colcel33 {
+  height: 0;
+  width: 0;
+}
+.colcel50 {
+  height: 0;
+  width: 0;
+}
+.row50 {
+  height: 50%;
+  width: 100%;
+}
+
+.menuMovilVisible {
+  height: 0;
+  visibility: hidden;
+}
+.fotoMovil,
+.fotoMovil img,
+.tituloMovil,
+.hamb {
+  height: 0;
+}
+/* Menu Lateral */
+.menuVisible {
+  visibility: visible;
+}
+.menuLateral {
+  position: fixed;
+  height: auto;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  padding: 20px 0 0;
+  overflow: auto;
+  z-index: 1;
+}
+.contenedorMenu {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.idiomas {
+  display: block;
+  position: relative;
+  height: auto;
+  /* width: 100%; */
+  margin-bottom: 10px;
+}
+.idiomas .selIdioma {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+
+  font-weight: 500;
+}
+.idiomas .seleccion {
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-content: center;
+}
+div.idiomas .redim {
+  position: relative;
+  height: auto;
+  width: auto;
+  margin-right: 5px;
+}
+div.idiomas .redim img {
+  height: 30px;
+  width: 30px;
+}
+.foto {
+  position: relative;
+  padding: 0 20px 0 20px;
+  text-align: center;
+  z-index: 0;
+}
+.foto img {
+  width: 100%;
+}
+.bloqueTitulo {
+  position: relative;
+  z-index: 1;
+  margin: 20px 20px 10px;
+  text-align: center;
+}
+.titulo {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2em;
+  color: #f5f5f5;
+  letter-spacing: 1px;
+  margin: 20px 0 0 0;
+}
+.contenedorListaMenu {
+  display: block;
+  padding: 20px 0 20px;
+}
+.menuPrincipal {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+li a {
+  border-top: 1px solid #333;
+}
+.contenedorListaMenu li a:hover,
+.contenedorMenu li a.active {
+  background-color: #333;
+  color: #f5f5f5;
+  cursor: pointer;
+  /* visibility: visible; */
+}
+.menuPrincipal li a {
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+  color: #f5f5f5;
+  letter-spacing: 0.1px;
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+}
+.areaLinks {
+  display: block;
+  padding: 0 0 20px 0;
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+}
+.menuLateral .links {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+.menuLateral .links a {
+  display: inline-block;
+  margin: 0 2px;
+  padding-top: 11px;
+  width: 50px;
+  height: 50px;
+  color: #aaa;
+  background-color: #444;
+  text-align: center;
+}
+.menuLateral .links a i {
+  font-size: 40px;
+  line-height: 28px;
+}
+.menuLateral .copyrights {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 10px 15px;
+  line-height: 14px;
+  font-size: 15px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* Display */
+
+.display {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+}
+.configuracionGeneral {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Display Inicio */
+
+.centro {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.fondo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(../imagenes/fondo.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tituloInicio {
+  top: 40%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: transparent;
+}
+.tituloInicio h2 {
+  margin: 0;
+  background-color: transparent;
+  color: #555;
+  font-size: 70px;
+  margin-bottom: 25px;
+}
+.subtitulo {
+  color: #555;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 10px 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Acerca de Mi */
+
+#AcercadeMi {
+  position: relative;
+  margin: 0 0 0 auto;
+}
+
+#AcercadeMi.estiloGeneral {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.estiloGeneral .contenedor .bloqueTitulo {
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 25px 15px 0 15px;
+  height: auto;
+  width: 100%;
+}
+.estiloGeneral .contenedor .titulo {
+  font-size: 38px;
+  padding-bottom: 15px;
+  margin: 0;
+  border-bottom: 5px solid #444;
+}
+#AcercadeMi .estiloGeneral .contenedor .subtitulo {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.estiloGeneral .contenedorInformacion {
+  display: block;
+  padding: 50px;
+}
+#AcercadeMi .estiloGeneral .contenedorInformacion .row {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#AcercadeMi .estiloGeneral .contenedorInformacion {
+  display: block;
+  padding: 20px;
+}
+#AcercadeMi .estiloGeneral .contenedorInformacion h3 {
+  font-style: normal;
+  color: #f5f5f5;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 25px;
+}
+#AcercadeMi .estiloGeneral .contenedorInformacion p {
+  font-size: 20px;
+  font-style: normal;
+  color: #f5f5f5;
+  line-height: 1.5em;
+}
+#AcercadeMi .informacion i {
+  display: flex;
+  text-align: left;
+  margin: 6px 0;
+}
+#AcercadeMi span a {
+  text-decoration: none;
+  color: aqua;
+}
+.display .informacion {
+  height: 100%;
+}
+.informacion {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.informacion ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.informacion li {
+  display: flex;
+  margin: 6px 0;
+  text-align: left;
+}
+.informacion li span {
+  display: flex;
+  margin: 6px 0;
+  text-align: left;
+}
+.informacion i {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.informacion li .titulo {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.informacion li .valor {
+  font-size: 20px;
+}
+.informacion li .titulo:after,
+.subraya:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(167, 167, 167);
+}
+.habilidades {
+  position: relative;
+}
+.habilidades .row .tituloHabilidades {
+  position: auto;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.habilidades .row .infoLista {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+.habilidades .row .subtitulo {
+  font-size: 30px;
+}
+.habilidades .row .infoLista li {
+  text-align: center;
+  font-size: 23px;
+}
+
+/* Industria */
+
+#Industria {
+  position: relative;
+  margin: 0 0 0 auto;
+}
+#Industria .estiloGeneral {
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 25px 15px 0 15px;
+  height: auto;
+  width: 100%;
+}
+#Industria .estiloGeneral .contenedorInformacion {
+  padding: 15px;
+}
+.contenedorExperiencia {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+  height: auto;
+}
+.contenedorExpIzquierdo {
+  width: 30%;
+  text-align: right;
+  padding-right: 25px;
+  min-height: 100%;
+  vertical-align: top;
+}
+.periodo {
+  margin: 3px 0;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+.compania {
+  display: block;
+  color: #aaa;
+  margin: 0 0 4px;
+  font-size: 15px;
+  line-height: 1.45em;
+}
+.divisor {
+  margin: 0 2%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #666;
+}
+.divisor:after {
+  content: "";
+  display: block;
+  margin-top: 7px;
+  width: 11px;
+  height: 11px;
+  margin-left: -7px;
+  border-radius: 10px;
+  border: 2px solid #0099e5;
+  background-color: #222;
+}
+.contenedorExpDerecho {
+  position: relative;
+  width: auto;
+}
+.contenedorExpDerecho h2 {
+  margin: 0;
+}
+.contenedorExpDerecho li {
+  font-size: 22px;
+  font-weight: 500;
+}
+.contenedorExpDerecho h2 {
+  margin: 0;
+}
+
+/* Portafolio */
+
+#Portafolio {
+  height: auto;
+}
+
+#Portafolio a {
+  text-decoration: none;
+}
+
+#Portafolio .subtitulo {
+  margin-bottom: 30px;
+}
+
+#Portafolio .contenedorExpIzquierdo {
+  width: 50%;
+  text-align: center;
+}
+
+#Portafolio .contenedorExpDerecho {
+  width: auto;
+}
+
+#Portafolio .divisor {
+  margin: 0 9% 0 0;
+}
+
+/* Contacto */
+
+#Contacto {
+  position: relative;
+  margin: 0 0 0 auto;
+}
+#Contacto .estiloGeneral {
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 25px 15px 0 15px;
+  height: auto;
+  width: 100%;
+}
+.cuadroContacto {
+  height: auto;
+  width: 22%;
+  text-align: center;
+  border: 3px solid #333;
+  padding: 20px 10px 15px;
+  margin: 0 auto;
+}
+.cuadroContacto i {
+  font-size: 50px;
+  position: relative;
+  color: #b5b5b5;
+}
+.cuadroContacto h4,
+.cuadroContacto a {
+  font-size: 18px;
+  position: relative;
+  color: #b5b5b5;
+  text-decoration: none;
+  text-align: center;
+}
+.contenedorFormulario {
+  margin: 5% auto;
+}
+.contenedorFormulario .row .col50 {
+  width: 100%;
+}
+.formBlock {
+  width: 100%;
+  margin-bottom: 15px;
+  margin: 14% 0 0 0;
+}
+.formControl {
+  position: relative;
+  border: 1px solid #555;
+  border-radius: 0;
+  display: block;
+  font-size: 1em;
+  margin: 0;
+  padding: 10px 25px 10px 12px;
+  width: 100%;
+  background: 0 0;
+  color: #b5b5b5;
+}
+.mensaje {
+  margin-bottom: 10px;
+}
+.botonEnviar {
+  display: inline-block;
+  position: relative;
+  padding: 0.8em 2em;
+  margin-bottom: 0.25em;
+  font-size: 1em;
+  line-height: 1.2;
+  color: #b5b5b5;
+  border: 0;
+  outline: 0;
+  border: 1px solid #555;
+  background-color: transparent;
+  border-radius: 0;
+}
+.formulario {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+/* Resolucion de Pantallas */
+
+@media only screen and (min-width: 991px) {
+  /* Pantallas */
+  /* General */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0 -15px 0 -15px;
+  }
+  .col50 {
+    width: 50%;
+    flex: 0 0 50%;
+    padding: 0 10px 0 10px;
+  }
+  .col33 {
+    width: 33%;
+    flex: 0 0 33%;
+    padding: 0 10px;
+  }
+  /* Menu Laterla */
+
+  /* Display */
+
+  .display {
+    padding-left: 200px;
+    min-height: 100%;
+  }
+
+  /* Acerca de Mi */
+}
+@media (max-width: 768px) {
+  /* Tablet */
+  /* General */
+
+  /* Panel Lateral */
+
+  .menuLateral {
+    border-right: 2px solid #444;
+  }
+
+  /* Display */
+  .display {
+    min-height: 100%;
+  }
+  /* Contacto */
+
+  #Contacto .estiloGeneral,
+  #Contacto .estiloGeneral .contenedor .bloqueTitulo,
+  #Contacto .estiloGeneral .contenedor .contenedorInformacion {
+    padding: 10px;
+  }
+  #Contacto .estiloGeneral .contenedor .contenedorInformacion .row {
+    display: block;
+  }
+  #Contacto
+    .estiloGeneral
+    .contenedor
+    .contenedorInformacion
+    .row
+    .cuadroContacto {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .contenedorExpDerecho li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 767px) {
+  /* Celular */
+  /* General */
+  header {
+    margin-top: 100px;
+    width: 150px;
+    flex-direction: column;
+    transition: all 0.5s ease;
+  }
+  header.transicion {
+    transform: translate(-100%);
+  }
+  section {
+    display: block;
+  }
+  .habilidades .row {
+    padding-top: 30px;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .col50 {
+    padding: 0;
+  }
+  .col33 {
+    width: 100%;
+  }
+  /* Menu Lateral */
+
+  .menuLateral {
+    width: 150px;
+  }
+  .visibleMovil {
+    visibility: visible;
+  }
+  .menuVisible {
+    visibility: hidden;
+  }
+  .menuMovil {
+    position: fixed;
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background-color: #222;
+    border-bottom: 2px solid #444;
+    z-index: 1;
+  }
+  .menuMovilVisible {
+    top: 0;
+    left: 0;
+    display: block;
+    visibility: visible;
+  }
+  .fotoMovil {
+    margin: 10px 10px 0 20px;
+    height: 80px;
+    width: auto;
+    float: left;
+  }
+  .fotoMovil img {
+    height: 100%;
+  }
+  .tituloMovil {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2em;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+    margin: 25px 0 0 0;
+    text-align: center;
+    float: left;
+  }
+  .hamb {
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    margin: 25px 10px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+  }
+  /* Display */
+
+  .display {
+    margin-top: 100px;
+  }
+
+  /* Diplay Inicio */
+
+  .tituloInicio h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .subtitulo {
+    color: #555;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  /* Acerca de mi */
+
+  #AcercadeMi {
+    height: auto;
+  }
+  #AcercadeMi .estiloGeneral .contenedorInformacion {
+    padding: 10px;
+  }
+  #AcercadeMi .estiloGeneral .contenedorInformacion .row {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .habilidades .row .subtitulo {
+    font-size: 25px;
+  }
+  .habilidades .row .infoLista li {
+    font-size: 18px;
+  }
+  .informacion i {
+    font-size: 18px;
+  }
+  .informacion li .titulo {
+    font-weight: 200;
+    font-size: 18px;
+  }
+  .informacion li .valor {
+    font-size: 18px;
+  }
+
+  /* Industria */
+
+  #Industria {
+    height: auto;
+  }
+  #Industria .estiloGeneral {
+    padding: 10px;
+  }
+  #Industria .estiloGeneral .contenedorInformacion {
+    padding: 10px;
+  }
+  #Industria .estiloGeneral .bloqueTitulo {
+    padding: 10px;
+  }
+
+  /* Portafolio */
+
+  #Portafolio .
+
+  /* Contacto */
+
+  #Contacto .estiloGeneral,
+  #Contacto .estiloGeneral .contenedor .bloqueTitulo,
+  #Contacto .estiloGeneral .contenedor .contenedorInformacion {
+    padding: 10px;
+  }
+  #Contacto .estiloGeneral .contenedor .contenedorInformacion .row {
+    display: block;
+  }
+  #Contacto
+    .estiloGeneral
+    .contenedor
+    .contenedorInformacion
+    .row
+    .cuadroContacto {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 640px) and (max-height: 360px) {
+  .tituloInicio {
+    top: 20%;
+  }
+}
